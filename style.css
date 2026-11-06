@@ -58,7 +58,7 @@ a:hover { color: var(--accent-soft); }
   display: block;
   width: min(100%, 620px);
   height: auto;
-  margin: 0 0 40px -14px;
+  margin: 0 auto 40px;
 }
 .nav {
   display: flex;
@@ -75,7 +75,15 @@ a:hover { color: var(--accent-soft); }
 .nav a:hover, .nav a[aria-current="page"] { color: var(--text); }
 
 /* Hero */
-.hero { padding: 88px 0 56px; }
+.hero { padding: 88px 0 56px; text-align: center; }
+.hero h1, .hero .lead { margin-left: auto; margin-right: auto; }
+.hero .actions { justify-content: center; }
+.hero-app-icon { margin-left: auto; margin-right: auto; }
+
+/* Centered section headings; body text in cards stays left-aligned */
+.section-head { text-align: center; }
+.section-head .section-intro { margin-left: auto; margin-right: auto; }
+.center { text-align: center; }
 .eyebrow {
   margin: 0 0 12px;
   font-size: 13px;
@@ -198,7 +206,7 @@ section { padding: 48px 0; }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
 
 /* Long-form pages (privacy, support) */
-.prose { max-width: 720px; padding: 64px 0 40px; }
+.prose { max-width: 720px; margin: 0 auto; padding: 64px 0 40px; }
 .prose h1 { font-size: clamp(32px, 5vw, 44px); }
 .prose h2 { font-size: 22px; margin-top: 40px; }
 .prose p, .prose li { color: #D3DCD7; }
